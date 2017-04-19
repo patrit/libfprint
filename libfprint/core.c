@@ -405,6 +405,9 @@ static struct fp_img_driver * const img_drivers[] = {
 	&fdu2000_driver,
 #endif
 	*/
+#ifdef ENABLE_ELAN
+	&elan_driver,
+#endif
 };
 
 static void register_drivers(void)
